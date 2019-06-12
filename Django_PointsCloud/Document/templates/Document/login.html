@@ -1,0 +1,40 @@
+{% include 'Document/Base1.html' %}
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/Document.css' %}">
+
+
+
+{% block body %}
+
+<!--<center><img src="{% static 'images/Plot.jpg' %}" width="700" height="700" ></center>-->
+
+
+<div class="login">
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="login-panel panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Inicio de sesión</h3>
+                        </div>
+                        <div class="panel-body">
+                            <center><form role="form" method="post" id='form_login'>
+                                {% csrf_token %}
+								{% for field in form %}
+									<br>{{ field }}<br>
+									{{ field.errors }}
+								{% endfor %}
+								<br><br>
+								<button class="btn btn-success" type="submit" name="login"/>Login</button>
+                            </form></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<center><p>¿No tienes cuenta? <a href="{% url 'register' %}">Registrate aquí </a></p></center>
+
+{% endblock %}

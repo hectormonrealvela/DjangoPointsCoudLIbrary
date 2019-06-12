@@ -1,0 +1,62 @@
+
+.test {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.login {
+
+
+  width: 75%;
+  margin: 0 auto;
+
+
+}
+
+
+body {
+
+  background-color:#FBF8EF;
+}
+
+th {
+
+  background-color: #ecede4;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Times new roman";
+  font-style: italic;
+
+
+}
+
+td {
+
+    text-align : left;
+    font-size: 18px;
+    font_family: "Times new roman";
+    font-style: italic;
+
+
+}
+
+
+.modal-body{
+
+
+    font-size: 20px;;
+    font_family: "Times new roman";
+    font-style: italic;
+
+}
+
+
+.modal-lg {
+    margin:  0 auto;
+    margin-top: 200px;
+
+}
+
+
+

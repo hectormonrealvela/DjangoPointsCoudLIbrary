@@ -1,0 +1,30 @@
+{% include 'Document/base.html' %}
+
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/Document.css' %}">
+
+<body>
+
+
+<div class="container">
+
+  <center><h3><i>Se esta representando la figura: {{filename}} </i></h3></center>
+  <br><br>
+
+</div>
+
+
+<!-- /.container -->
+<div class="test">
+
+    <div class="col-md-12 ">{{plot|safe}}</div>
+
+</div>
+
+
+
+</body>
+
+{% endblock %}
